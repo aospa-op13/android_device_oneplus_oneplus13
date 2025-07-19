@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2022 The Nameless-AOSP Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+
+    <!-- Alert Slider UI -->
+    <dimen name="tri_state_down_dialog_position">439px</dimen>
+    <dimen name="tri_state_down_dialog_position_l">353px</dimen>
+    <dimen name="tri_state_middle_dialog_position">293px</dimen>
+    <dimen name="tri_state_middle_dialog_position_l">287px</dimen>
+    <dimen name="tri_state_up_dialog_position">165px</dimen>
+    <dimen name="tri_state_up_dialog_position_l">225px</dimen>
+
+</resources>
