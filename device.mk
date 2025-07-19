@@ -21,22 +21,19 @@ TARGET_SCREEN_WIDTH := 1440
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/display/displayconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946756802996883.xml
 
-# LiveDisplay
-$(call soong_config_set,OPLUS_LINEAGE_LIVEDISPLAY_HAL,ENABLE_AF,true)
-
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage
-
 PRODUCT_PACKAGES += \
-    OPlusFrameworksResTarget \
-    OPlusSettingsProviderResTarget \
-    OPlusSettingsResTarget \
-    OPlusSystemUIResTarget
+    AOSPAOnePlus13Frameworks \
+    AOSPAOnePlus13SystemUI \
+    OnePlus13Frameworks \
+    OnePlus13Settings \
+    OnePlus13SettingsProvider \
+    OnePlus13SystemUI
 
 # PowerShare
 PRODUCT_PACKAGES += \
-    vendor.lineage.powershare-service.oplus
+    vendor.aospa.powershare-service
+
+TARGET_POWERSHARE_NODE := /proc/wireless/enable_tx
 
 # Regional properties
 PRODUCT_COPY_FILES += \
@@ -50,15 +47,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
-# Touch features
-$(call soong_config_set,OPLUS_LINEAGE_TOUCH_HAL,ENABLE_GM,true)
-$(call soong_config_set,OPLUS_LINEAGE_TOUCH_HAL,ENABLE_HTPR,false)
-
-# Vibrator
-$(call soong_config_set,OPLUS_LINEAGE_VIBRATOR_HAL,USE_EFFECT_STREAM,true)
-
 # Inherit from the common OEM chipset makefile.
 $(call inherit-product, device/oneplus/sm8750-common/common.mk)
 
 # Inherit from the proprietary files makefile.
-$(call inherit-product, vendor/oneplus/dodge/dodge-vendor.mk)
+$(call inherit-product, vendor/oneplus/oneplus13/oneplus13-vendor.mk)
