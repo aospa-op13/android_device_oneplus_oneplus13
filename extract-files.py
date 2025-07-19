@@ -18,9 +18,9 @@ from extract_utils.main import (
 
 namespace_imports = [
     'hardware/oplus',
-    'hardware/qcom-caf/sm8750',
     'vendor/oneplus/sm8750-common',
-    'vendor/qcom/opensource/commonsys-intf/display',
+    'vendor/qcom/common/system/display',
+    'vendor/qcom/common/vendor/adreno-v',
 ]
 
 blob_fixups: blob_fixups_user_type = {
@@ -54,7 +54,7 @@ blob_fixups: blob_fixups_user_type = {
 }  # fmt: skip
 
 module = ExtractUtilsModule(
-    'dodge',
+    'oneplus13',
     'oneplus',
     namespace_imports=namespace_imports,
     blob_fixups=blob_fixups,
