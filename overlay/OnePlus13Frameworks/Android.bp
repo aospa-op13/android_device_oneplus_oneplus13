@@ -4,6 +4,6 @@
 //
 
 runtime_resource_overlay {
-    name: "OPlusSystemUIResTarget",
+    name: "OnePlus13Frameworks",
     device_specific: true,
 }
