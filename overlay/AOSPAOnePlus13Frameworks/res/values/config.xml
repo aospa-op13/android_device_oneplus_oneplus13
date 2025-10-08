@@ -6,6 +6,6 @@
 <resources>
 
     <!-- Fingerprint from stock ROM -->
-    <string name="stock_fingerprint" translatable="false">OnePlus/CPH2653EEA/OP5D55L1:15/AP3A.240617.008/V.R4T3.38e5dcd-19631d6-1977a50:user/release-keys</string>
+    <string name="stock_fingerprint" translatable="false">OnePlus/CPH2653EEA/OP5D55L1:15/AP3A.240617.008/V.R4T3.1accb8e_566b33_566b34:user/release-keys</string>
 
 </resources>
