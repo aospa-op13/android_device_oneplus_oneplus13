@@ -732,7 +732,6 @@ odm/etc/camera/neon_yuv_LUT_64.bin
 odm/etc/camera/oplus_eis_camera.vcfg
 odm/etc/camera/qnn_binary_9052758122668408981.bin
 odm/etc/camera/salient2_seg.bin
-odm/etc/camera/self_ois.ocfg
 odm/etc/camera/selfbokehParam.json
 odm/etc/camera/selfbokehmodel.bin
 odm/etc/camera/settings_fdc.txt
