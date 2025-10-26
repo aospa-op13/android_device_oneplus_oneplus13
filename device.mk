@@ -29,6 +29,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     AOSPAOnePlus13Frameworks \
     AOSPAOnePlus13SystemUI \
+    FrameworksResTargetEuicc \
     OnePlus13Frameworks \
     OnePlus13Settings \
     OnePlus13SettingsProvider \
@@ -51,6 +52,13 @@ PRODUCT_COPY_FILES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+
+# Telephony
+PRODUCT_PACKAGES += \
+    OplusEuicc
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.euicc.xml
 
 # Inherit from the common OEM chipset makefile.
 $(call inherit-product, device/oneplus/sm8750-common/common.mk)
