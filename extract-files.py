@@ -21,6 +21,7 @@ namespace_imports = [
     'vendor/oneplus/sm8750-common',
     'vendor/qcom/common/system/display',
     'vendor/qcom/common/vendor/adreno-v',
+    'vendor/qcom/common/vendor/media/6.6',
 ]
 
 blob_fixups: blob_fixups_user_type = {
