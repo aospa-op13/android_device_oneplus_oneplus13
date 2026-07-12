@@ -20,7 +20,7 @@ namespace_imports = [
     'hardware/oplus',
     'vendor/oneplus/sm8750-common',
     'vendor/qcom/common/system/display',
-    'vendor/qcom/common/vendor/adreno-v',
+    'vendor/qcom/common/vendor/adreno/v',
     'vendor/qcom/common/vendor/media/6.6',
 ]
 
