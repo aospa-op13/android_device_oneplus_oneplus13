@@ -35,6 +35,9 @@ PRODUCT_PACKAGES += \
     OnePlus13SettingsProvider \
     OnePlus13SystemUI
 
+# Kernel configurations
+KERNEL_PREBUILT_DIR := $(LOCAL_PATH)-kernel
+
 # NFC
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/nfc/libnfc-mtp-SN220.conf_23821:$(TARGET_COPY_OUT_ODM)/etc/libnfc-mtp-SN220.conf_23821 \
