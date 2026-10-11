@@ -28,6 +28,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     AOSPAOnePlus13Frameworks \
     AOSPAOnePlus13SystemUI \
+    EuiccPolicyResTarget \
     FrameworksResTargetEuicc \
     OnePlus13Frameworks \
     OnePlus13Settings \
