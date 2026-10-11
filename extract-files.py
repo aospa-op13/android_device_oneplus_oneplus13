@@ -1,4 +1,4 @@
-#!/usr/bin/env -S PYTHONPATH=../../../tools/extract-utils:../../../hardware/oplus/extract-utils-ext python3
+#!/usr/bin/env -S PYTHONPATH=../../../tools/extract-utils python3
 #
 # SPDX-FileCopyrightText: The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
@@ -14,9 +14,6 @@ from extract_utils.fixups_lib import (
 from extract_utils.main import (
     ExtractUtils,
     ExtractUtilsModule,
-)
-from extract_utils_oplus import (
-    add_generated_thermal_engine_config,
 )
 
 namespace_imports = [
@@ -74,8 +71,6 @@ module = ExtractUtilsModule(
     lib_fixups=lib_fixups,
     #add_firmware_proprietary_file=True,
 )
-
-add_generated_thermal_engine_config(module)
 
 if __name__ == '__main__':
     utils = ExtractUtils.device_with_common(
